@@ -4,6 +4,8 @@ go 1.22.5
 
 require github.com/gin-gonic/gin v1.10.0
 
+require github.com/btcsuite/btcd/btcutil v1.1.5
+
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/google/go-cmp v0.6.0 // indirect
