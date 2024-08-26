@@ -2,6 +2,7 @@ package store
 
 import (
 	"fmt"
+	"log"
 	"time"
 
 	"github.com/go-redis/redis"
@@ -29,7 +30,7 @@ func InitializeStore() *StorageService {
 		panic(fmt.Sprintf("Error init Redis: %v", err))
 	}
 
-	fmt.Printf("\nRedis started successfully: pong message = {%s}\n", pong)
+	log.Printf("Redis started successfully.\nPong Message = {%s}\n", pong)
 	storeService.redisClient = redisClient
 	return storeService
 }
